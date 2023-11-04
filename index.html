@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goexpress Trandport Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark static-top top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/goexpress.JPG" alt="..." class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terminals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coureiers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contact.html">Contact </a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="pages/login.html">Login/SignUp</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container-fluid" class="bg-image" 
+      style="background-image: url('images/edit.jpg');
+             height: auto; background-size: cover;">
+      <h1 class="text-white text-center p-5" style="font-size: 45px;">The best way to travel across cities and countries</h1>
+      
+      <!---Card for booking-->
+      <div class="card1">
+        <article class="card-body mx-auto p-5">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toogle" onclick="one()">One Trip <i class="fas fa-arrow-right arrow"></i></button>
+                <button type="button" class="toogle" onclick="round()">Round Trip<i class="fa fa-repeat arrow"></i></button>
+            </div>
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+            <p class="text-center">Get started with your free account</p>
+          
+
+            <form>
+            <div class="form-group input-group">
+               
+                <select class="tel">
+                    <option data-countryCode="NG" value="234">+234</option>
+                    <option data-countryCode="GH" value="233">+233</option>
+                  </select>
+                  <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
+
+
+            </div>
+            
+            <input type="text" class="input-field" placeholder="Full Name" required>
+            <input type="text" class="next" placeholder="Next Of Kin" required>
+            
+            <select class="tel">
+                <option data-countryCode="NG" value="234">+234</option>
+                <option data-countryCode="GH" value="233">+233</option>
+              </select>
+              <input type="tel" name="tel" class="input-tel" placeholder="Enter phone">
+            
+            <select id="location" class="input-field">
+                <option value="Departure Terminal">Departure Terminal</option>
+                <option value="Abia > Aba">Abia > Aba</option>
+                <option value="Abia > Umuahia">Abia > Umuahia</option>
+                <option value="Anambra > Akwa">Anambra > Akwa</option>
+                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
+                <option value="Anambra > onitsha">Anambra > onitsha</option>
+                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
+                <option value="Accra > Circle">Accra > circle</option>
+                <option value="Accra > Kasoa">Accra > kasoa</option>
+                <option value="Accra > Madina">Accra > Madina</option>
+                <option value="Enugu > 4corner">Enugu > 4corner</option>
+                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
+                <option value="Imo > Owerri">Imo > Owerri</option>
+            </select>
+
+            <select id="Terminal" class="input-field">
+                <option value="Arrival Terminal">Arrival Terminal</option>
+                <option value="Abia > Aba">Abia > Aba</option>
+                <option value="Abia > Umuahia">Abia > Umuahia</option>
+                <option value="Anambra > Akwa">Anambra > Akwa</option>
+                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
+                <option value="Anambra > onitsha">Anambra > onitsha</option>
+                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
+                <option value="Accra > Circle">Accra > circle</option>
+                <option value="Accra > Kasoa">Accra > kasoa</option>
+                <option value="Accra > Madina">Accra > Madina</option>
+                <option value="Enugu > 4corner">Enugu > 4corner</option>
+                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
+                <option value="Imo > Owerri">Imo > Owerri</option>
+            </select>
+            <label>Departure Date</label>
+            <input type="date" class="input-field" size="30" min="2022-01-01" required>
+            <select id="Travelers" class="input-field">
+                <option value="Travelers">Travelers</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <input type="checkbox" class="check-box"><span>Accept terms</span>
+            <button type="submit" class="submit-btn">Proceed</button>
+        </form>
+        <form action="" class="input-group" id="round">
+            <select class="tel">
+                <option data-countryCode="NG" value="234">+234</option>
+                <option data-countryCode="GH" value="233">+233</option>
+              </select>
+              <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
+              <input type="text" class="input-field" placeholder="Full Name" required>
+              <input type="text" class="next" placeholder="Next Of Kin" required>
+              
+              <select class="tel">
+                  <option data-countryCode="NG" value="234">+234</option>
+                  <option data-countryCode="GH" value="233">+233</option>
+                </select>
+                <input type="tel" name="tel" class="input-tel" placeholder="Enter phone">
+            <select id="location" class="input-field">
+                <option value="Departure Terminal">Departure Terminal</option>
+                <option value="Abia > Aba">Abia > Aba</option>
+                <option value="Abia > Umuahia">Abia > Umuahia</option>
+                <option value="Anambra > Akwa">Anambra > Akwa</option>
+                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
+                <option value="Anambra > onitsha">Anambra > onitsha</option>
+                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
+                <option value="Accra > Circle">Accra > circle</option>
+                <option value="Accra > Kasoa">Accra > kasoa</option>
+                <option value="Accra > Madina">Accra > Madina</option>
+                <option value="Enugu > 4corner">Enugu > 4corner</option>
+                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
+                <option value="Imo > Owerri">Imo > Owerri</option>
+            </select>
+
+            <select id="Terminal" class="input-field">
+                <option value="Arrival Terminal">Arrival Terminal</option>
+                <option value="Abia > Aba">Abia > Aba</option>
+                <option value="Abia > Umuahia">Abia > Umuahia</option>
+                <option value="Anambra > Akwa">Anambra > Akwa</option>
+                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
+                <option value="Anambra > onitsha">Anambra > onitsha</option>
+                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
+                <option value="Accra > Circle">Accra > circle</option>
+                <option value="Accra > Kasoa">Accra > kasoa</option>
+                <option value="Accra > Madina">Accra > Madina</option>
+                <option value="Enugu > 4corner">Enugu > 4corner</option>
+                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
+                <option value="Imo > Owerri">Imo > Owerri</option>
+            </select>
+            <label class="title">Departure Date</label>
+            <input type="date" class="input-date" size="30" min="2022-01-01" required>
+            <label class="title">Arrival Date</label>
+            <input type="date" class="input-date" size="30" min="2022-01-01" required>
+            <select id="Travelers" class="input-field">
+                <option value="Travelers">Travelers</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <input type="checkbox" class="check-box"><span>Accept terms</span>
+            <button type="submit" class="submit-btn">Proceed</button>
+
+                                                                           
+        </form>
+        </article>
+        </div>
+    </div>
+  </div>
+
+</div>
+ 
+  </div>
+  <div class="container shadow mt-5 border">
+    <h1 class="text-center text-decoration-underline p-5">OUR SERVICES</h1>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end border-bottom py-5 px-3">
+          <div class="icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+            <h4 class="mb-3 fw-normal text-uppercase">Courier</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end border-bottom py-5 px-3">
+            <i class="bi bi-images text-danger fs-1"></i>
+            
+            <h4 class="mb-3 fw-normal text-uppercase">Transport</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-bottom py-5 px-3">
+            <i class="bi bi-shop text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Routes</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end py-5 px-3">
+            <i class="bi bi-pencil-square text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Safety</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end py-5 px-3">
+            <i class="bi bi-briefcase text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">CustomerSupport</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center py-5 px-3">
+            <i class="bi bi-book text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Real-Time Tracking</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center py-5 px-3">
+            <i class="bi bi-book text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Driving</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center py-5 px-3">
+            <i class="bi bi-book text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Affordable Prices</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center py-5 px-3">
+            <i class="bi bi-book text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Environmental Responsibility</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer_area section_padding_130_0">
+  <div class="container">
+    <div class="row">
+      <!-- Single Widget-->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="single-footer-widget section_padding_0_130">
+          <!-- Footer Logo-->
+          <div class="footer-logo mb-3"></div>
+          <img src="/images/goexpress.JPG" alt="" style="width: 100%;">
+          <!-- Copywrite Text-->
+          <div class="copywrite-text mb-5">
+            <p class="mb-0">Made with <i class="lni-heart mr-1"></i>by<a class="ml-1" href="">Goexpress</a></p>
+          </div>
+          <!-- Footer Social Area-->
+          <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+        </div>
+      </div>
+      <!-- Single Widget-->
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <!-- Widget Title-->
+          <h5 class="widget-title">About</h5>
+          <!-- Footer Menu-->
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Corporate Sale</a></li>
+              <li><a href="#">Terms &amp; Policy</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Single Widget-->
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <!-- Widget Title-->
+          <h5 class="widget-title">Support</h5>
+          <!-- Footer Menu-->
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term &amp; Conditions</a></li>
+              <li><a href="#">Help &amp; Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Single Widget-->
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <!-- Widget Title-->
+          <h5 class="widget-title">Contact</h5>
+          <!-- Footer Menu-->
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">Call Centre</a></li>
+              <li><a href="#">Email Us</a></li>
+              <li><a href="#">Term &amp; Conditions</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <script>
+        var x = document.getElementById("one");
+        var y = document.getElementById("round");
+        var z = document.getElementById("btn");
+  
+        function round(){
+          x.style.left = "-800px";
+          y.style.left = "50px";
+          z.style.left = "134px";
+        }
+        function one(){
+          x.style.left = "50px";
+          y.style.left = "900px";
+          z.style.left = "0";
+        }
+  
+  
+      </script>
+</body>
+</html>
