@@ -46,163 +46,152 @@
       </nav>
       
       <div class="container-fluid" class="bg-image" 
-      style="background-image: url('images/edit.jpg');
+      style="
              height: auto; background-size: cover;">
       <h1 class="text-white text-center p-5" style="font-size: 45px;">The best way to travel across cities and countries</h1>
       
       <!---Card for booking-->
       <div class="card1">
-        <article class="card-body mx-auto p-5">
+        <!-- <article class="card-body mx-auto p-5"> -->
+          <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toogle" onclick="one()">One Trip <i class="fas fa-arrow-right arrow"></i></button>
                 <button type="button" class="toogle" onclick="round()">Round Trip<i class="fa fa-repeat arrow"></i></button>
             </div>
-         
-          
+            <form action="" class="input-group" id="one">
+                <select class="tel">
+                  <option data-countryCode="NG" value="234">+234</option>
+                  <option data-countryCode="GH" value="233">+233</option>
+                </select>
+                <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
+                <input type="text" class="input-field" placeholder="Full Name" required>
+                <input type="text" class="next" placeholder="Next Of Kin" required>
+                
+                <select class="tel">
+                    <option data-countryCode="NG" value="234">+234</option>
+                    <option data-countryCode="GH" value="233">+233</option>
+                  </select>
+                  <input type="tel" name="tel" class="input-tel" placeholder="Enter Next Of Kin Phone">
+                
+                <select id="location" class="input-field">
+                    <option value="Departure Terminal">Departure Terminal</option>
+                    <option value="Accra > Circle">Accra-Circle</option>
+                    <option value="Accra > Kasoa">Accra-Kasoa</option>
+                    <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                    <option value="Lagos > Cele">Lagos-Cele</option>
+                    <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
+                </select>
 
-            <form>
-            <div class="form-group input-group">
-               
+                <select id="Terminal" class="input-field">
+                    <option value="Arrival Terminal">Arrival Terminal</option>
+                    <option value="Abia > Aba">Abia-Aba</option>
+                    <option value="Abia > Umuahia">Abia-Umuahia</option>
+                    <option value="Anambra > Akwa">Anambra-Akwa</option>
+                    <option value="Anambra > Nnewi">Anambra-Nnewi</option>
+                    <option value="Anambra > onitsha">Anambra-onitsha</option>
+                    <option value="Anambra > Ekwulobia">Anambra-Ekwulobia</option>
+                    <option value="Accra > Circle">Accra-circle</option>
+                    <option value="Accra > Kasoa">Accra-kasoa</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
+                    <option value="Ebonyi > Abakiliki">Ebonyi-Abakiliki</option>
+                    <option value="Imo > Owerri">Imo-Owerri</option>
+                    <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                    <option value="Lagos > Cele">Lagos-Cele</option>
+                    <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
+                </select>
+                <label>Departure Date</label>
+                <input type="date" class="input-field" size="30" min="2022-01-01" required>
+                <select id="Travelers" class="input-field">
+                    <option value="Travelers">Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="checkbox" class="check-box"><span>Accept terms</span>
+                <button type="submit" class="submit-btn">Proceed</button>
+            </form>
+            <form action="" class="input-group" id="round">
                 <select class="tel">
                     <option data-countryCode="NG" value="234">+234</option>
                     <option data-countryCode="GH" value="233">+233</option>
                   </select>
                   <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
-
-
-            </div>
-            
-            <input type="text" class="input-field" placeholder="Full Name" required>
-            <input type="text" class="next" placeholder="Next Of Kin" required>
-            
-            <select class="tel">
-                <option data-countryCode="NG" value="234">+234</option>
-                <option data-countryCode="GH" value="233">+233</option>
-              </select>
-              <input type="tel" name="tel" class="input-tel" placeholder="Enter phone">
-            
-            <select id="location" class="input-field">
-                <option value="Departure Terminal">Departure Terminal</option>
-                <option value="Abia > Aba">Abia > Aba</option>
-                <option value="Abia > Umuahia">Abia > Umuahia</option>
-                <option value="Anambra > Akwa">Anambra > Akwa</option>
-                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
-                <option value="Anambra > onitsha">Anambra > onitsha</option>
-                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
-                <option value="Accra > Circle">Accra > circle</option>
-                <option value="Accra > Kasoa">Accra > kasoa</option>
-                <option value="Accra > Madina">Accra > Madina</option>
-                <option value="Enugu > 4corner">Enugu > 4corner</option>
-                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
-                <option value="Imo > Owerri">Imo > Owerri</option>
-            </select>
-
-            <select id="Terminal" class="input-field">
-                <option value="Arrival Terminal">Arrival Terminal</option>
-                <option value="Abia > Aba">Abia > Aba</option>
-                <option value="Abia > Umuahia">Abia > Umuahia</option>
-                <option value="Anambra > Akwa">Anambra > Akwa</option>
-                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
-                <option value="Anambra > onitsha">Anambra > onitsha</option>
-                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
-                <option value="Accra > Circle">Accra > circle</option>
-                <option value="Accra > Kasoa">Accra > kasoa</option>
-                <option value="Accra > Madina">Accra > Madina</option>
-                <option value="Enugu > 4corner">Enugu > 4corner</option>
-                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
-                <option value="Imo > Owerri">Imo > Owerri</option>
-            </select>
-            <label>Departure Date</label>
-            <input type="date" class="input-field" size="30" min="2022-01-01" required>
-            <select id="Travelers" class="input-field">
-                <option value="Travelers">Travelers</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>
-            <input type="checkbox" class="check-box"><span>Accept terms</span>
-            <button type="submit" class="submit-btn">Proceed</button>
-        </form>
-        <form action="" class="input-group" id="round">
-            <select class="tel">
-                <option data-countryCode="NG" value="234">+234</option>
-                <option data-countryCode="GH" value="233">+233</option>
-              </select>
-              <input type="tel" name="tel" class="input-class" placeholder="Enter phone">
-              <input type="text" class="input-field" placeholder="Full Name" required>
-              <input type="text" class="next" placeholder="Next Of Kin" required>
-              
-              <select class="tel">
-                  <option data-countryCode="NG" value="234">+234</option>
-                  <option data-countryCode="GH" value="233">+233</option>
+                  <input type="text" class="input-field" placeholder="Full Name" required>
+                  <input type="text" class="next" placeholder="Next Of Kin" required>
+                  
+                  <select class="tel">
+                      <option data-countryCode="NG" value="234">+234</option>
+                      <option data-countryCode="GH" value="233">+233</option>
+                    </select>
+                    <input type="tel" name="tel" class="input-tel" placeholder="Enter Next Of Kin Phone">
+                <select id="location" class="input-field">
+                    <option value="Departure Terminal">Departure Terminal</option>
+                    <option value="Accra > Circle">Accra-Circle</option>
+                    <option value="Accra > Kasoa">Accra-Kasoa</option>
+                    <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                    <option value="Lagos > Cele">Lagos-Cele</option>
+                    <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
                 </select>
-                <input type="tel" name="tel" class="input-tel" placeholder="Enter phone">
-            <select id="location" class="input-field">
-                <option value="Departure Terminal">Departure Terminal</option>
-                <option value="Abia > Aba">Abia > Aba</option>
-                <option value="Abia > Umuahia">Abia > Umuahia</option>
-                <option value="Anambra > Akwa">Anambra > Akwa</option>
-                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
-                <option value="Anambra > onitsha">Anambra > onitsha</option>
-                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
-                <option value="Accra > Circle">Accra > circle</option>
-                <option value="Accra > Kasoa">Accra > kasoa</option>
-                <option value="Accra > Madina">Accra > Madina</option>
-                <option value="Enugu > 4corner">Enugu > 4corner</option>
-                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
-                <option value="Imo > Owerri">Imo > Owerri</option>
-            </select>
 
-            <select id="Terminal" class="input-field">
-                <option value="Arrival Terminal">Arrival Terminal</option>
-                <option value="Abia > Aba">Abia > Aba</option>
-                <option value="Abia > Umuahia">Abia > Umuahia</option>
-                <option value="Anambra > Akwa">Anambra > Akwa</option>
-                <option value="Anambra > Nnewi">Anambra > Nnewi</option>
-                <option value="Anambra > onitsha">Anambra > onitsha</option>
-                <option value="Anambra > Ekwulobia">Anambra > Ekwulobia</option>
-                <option value="Accra > Circle">Accra > circle</option>
-                <option value="Accra > Kasoa">Accra > kasoa</option>
-                <option value="Accra > Madina">Accra > Madina</option>
-                <option value="Enugu > 4corner">Enugu > 4corner</option>
-                <option value="Ebonyi > Abakiliki">Ebonyi > Abakiliki</option>
-                <option value="Imo > Owerri">Imo > Owerri</option>
-            </select>
-            <label class="title">Departure Date</label>
-            <input type="date" class="input-date" size="30" min="2022-01-01" required>
-            <label class="title">Arrival Date</label>
-            <input type="date" class="input-date" size="30" min="2022-01-01" required>
-            <select id="Travelers" class="input-field">
-                <option value="Travelers">Travelers</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>
-            <input type="checkbox" class="check-box"><span>Accept terms</span>
-            <button type="submit" class="submit-btn">Proceed</button>
+                <select id="Terminal" class="input-field">
+                    <option value="Arrival Terminal">Arrival Terminal</option>
+                    <option value="Abia > Aba">Abia-Aba</option>
+                    <option value="Abia > Umuahia">Abia-Umuahia</option>
+                    <option value="Anambra > Akwa">Anambra-Akwa</option>
+                    <option value="Anambra > Nnewi">Anambra-Nnewi</option>
+                    <option value="Anambra > onitsha">Anambra-onitsha</option>
+                    <option value="Anambra > Ekwulobia">Anambra-Ekwulobia</option>
+                    <option value="Accra > Circle">Accra-circle</option>
+                    <option value="Accra > Kasoa">Accra-kasoa</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
+                    <option value="Ebonyi > Abakiliki">Ebonyi-Abakiliki</option>
+                    <option value="Imo > Owerri">Imo-Owerri</option>
+                    <option value="Lagos > Maza-maza">Lagos-Maza-maza</option>
+                    <option value="Lagos > Cele">Lagos-Cele</option>
+                    <option value="Lagos > Iyana-Ipaja">Lagos-Iyana-Ipaja</option>
+                    <option value="Enugu > 4corner">Enugu-4corner</option>
+                </select>
+                <label class="title">Departure Date</label>
+                <input type="date" class="input-date" size="30" min="2022-01-01" required>
+                <label class="title">Arrival Date</label>
+                <input type="date" class="input-date" size="30" min="2022-01-01" required>
+                <select id="Travelers" class="input-field">
+                    <option value="Travelers">Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="checkbox" class="check-box"><span>Accept terms</span>
+                <button type="submit" class="submit-btn">Proceed</button>
+            </form>
+        </div>
+         
+          
 
-                                                                           
-        </form>
-        </article>
+            
+        <!-- </article> -->
         </div>
     </div>
   </div>

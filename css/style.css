@@ -40,7 +40,7 @@
     background-color: #42AEEC;
     color: #fff;
 }
-.card1{
+/* .card1{
     width: 70%;
     margin: auto;
     background: transparent;
@@ -49,7 +49,24 @@
     border-radius: 10px;
     overflow: hidden;
     backdrop-filter: blur(10px);
+} */
+
+
+.form-box{
+    width: 900px;
+    height: 850px;
+    position: relative;
+    margin: 6% auto;
+    background-image:linear-gradient(rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%), url("../images/edit.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow:  0 0 10px 5px  #777;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
 }
+
 .button-box{
     width: 285px;
     margin: 35px auto;
@@ -78,6 +95,13 @@
     border-radius: 30px;
     transition: .5s;
 }
+.input-group{
+    top: 120px;
+    position: absolute;
+    width: 780px;
+    transition: .5s;
+}
+
 .input-field{
     width: 100%;
     padding: 10px 0;
@@ -85,11 +109,11 @@
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
     outline: none;
     background: transparent;
     font-size: 17px;
-    color: #fff;
+    color: #ffffff;
 }
 .tel{
     width: 80px;
@@ -98,31 +122,119 @@
     border-top: none;
     border-right: none;
     background-color: transparent;
-    color: #000;
-    border-bottom: 1px solid #fff;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
     outline: none;
     padding: 10px 0;
     margin: 5px 0;
 }
 
 .input-class{
-    width: 70%;
+    width: 89%;
     border-left: none;
     border-top: none;
     border-right: none;
     outline: none;
     background: transparent;
     font-size: 17px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
     padding: 10px 0;
     margin: 5px 0;
-    color: #000;
+    color: #ffffff;
+}
+
+.next{
+    width: 100%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.input-tel{
+    width: 90%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+option{
+    color: #0e0d0d;
+}
+
+.title{
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 0 0;
+    color: #f5f5ff;
+}
+
+.input-date{
+    width: 100%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px 0;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #16eb27ab, #1ff5318f);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #ffffff;
+    margin: 30px 10px 30px 0;
+}
+
+#one{
+    left: 50px;
+}
+
+#round{
+    left: 900px;
+}
+
+
+label {
+    font-size: 13px;
+    color: #ffffff;
 }
 .footer_area {
     position: relative;
     z-index: 1;
     overflow: hidden;
-webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+     webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     padding:60px;
 }
@@ -292,5 +404,59 @@ ol, ul {
     .card1{
         width: 100%;
     }
+
+    .form-box{
+        width: 100%;
+    }
+
+    .input-group{
+        top: 120px;
+        position: absolute;
+        width: 80%;
+        transition: .5s;
+    }
+    
+    .input-field{
+        width: 100%;
+        display: block;
+    }
+    .tel{
+        width: 80px;
+    }
+    
+    .input-class{
+        width: 78%;
+    }
+    
+    .next{
+        width: 100%;
+        display: block;
+    }
+    
+    .input-tel{
+        width: 78%;
+    }
+
+    label{
+        display: block;
+    }
+
+    .title{
+        border: 0;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    .input-date{
+        width: 100%;
+    }
+
+    .submit-btn{
+        width: 85%;
+        margin: 0;
+        margin-left: 50px;
+}
+
+    
   }
   

@@ -235,6 +235,39 @@ body {
     -o-animation: ripple 0.75s linear;
     animation: ripple 0.75s linear;
   }
+/* terminal card css */
+.card{
+  background: var(#d0d0d0);
+  display: block;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  transition: all 300ms ease;
+}
+
+.card p{
+  font-size: 17px;
+}
+
+.card a{
+  text-decoration: none;
+  color: #24cf14;
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: none;
+  transition: all 300ms ease;
+}
+
+.card h3{
+  font-size: 28px;
+}
+/* end of terminal card css */
+
   @keyframes ripple {
     100% {
       opacity: 0;
