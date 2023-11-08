@@ -426,6 +426,16 @@ ol, ul {
         width: 100%;
     }
 
+    .button-box{
+        width: 300px;
+    }
+
+    #btn{
+        width: 165px;
+    }
+
+   
+
     .form-box{
         width: 100%;
     }
