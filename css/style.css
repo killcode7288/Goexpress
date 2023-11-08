@@ -197,7 +197,7 @@ option{
 }
 
 .submit-btn{
-    width: 85%;
+    width: 50%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
