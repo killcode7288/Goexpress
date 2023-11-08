@@ -372,6 +372,26 @@ label {
 .footer_social_area a:focus {
     color: #ffffff;
 }
+.footer_social_area .f{
+  color: blue;
+}
+.footer_social_area .i{
+  color: red;
+}
+.footer_social_area .t{
+  color: blueviolet;
+}
+.footer_social_area .f:hover{
+  color: rgb(12, 12, 225);
+
+}
+.footer_social_area .i:hover{
+  color: rgb(219, 10, 10);
+}
+.footer_social_area .t:hover{
+  color: rgb(35, 35, 173)violet;
+}
+
 
 @-webkit-keyframes bi-cycle {
     0% {
@@ -381,6 +401,7 @@ label {
         left: 100%;
     }
 }
+
 
 @keyframes bi-cycle {
     0% {
