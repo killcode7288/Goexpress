@@ -9,6 +9,9 @@
 .top{
     background-color: rgb(16, 175, 16);
 }
+.fas{
+    font-size: 30px;
+}
 
 .divider-text {
     position: relative;
